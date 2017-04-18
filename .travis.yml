@@ -3,4 +3,6 @@ sudo: false
 node_js: 
   - "6.5.0"
 env:
-  - NODE_ENV=production
+  - NODE_ENV=development
+
+after_success: npm run coverage

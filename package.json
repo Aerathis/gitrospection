@@ -10,8 +10,15 @@
 	},
 	"license": "MIT",
 	"scripts": {
+		"run": "node lib/lib.js",
+		"test": "nyc mocha --timeout=3000",
+		"coverage": "nyc report --reporter=text-lcov | coveralls"
+	},
+	"dependencies": {
+		"nodegit": "latest"
 	},
 	"devDependencies": {
-		"mocha": "latest"
+		"mocha": "latest",
+		"coveralls": "latest"		
 	}
 }
