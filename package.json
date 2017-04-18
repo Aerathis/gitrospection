@@ -1,0 +1,17 @@
+{
+	"name": "gitrospection",
+	"description": "Get some basic insight into your git repository info",
+	"version": "0.0.1",
+	"private": false,
+	"author": "Aerathis <jdp@cultik.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Aerathis/gitrospection.git"
+	},
+	"license": "MIT",
+	"scripts": {
+	},
+	"devDependencies": {
+		"mocha": "latest"
+	}
+}
