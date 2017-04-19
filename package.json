@@ -2,7 +2,7 @@
 	"name": "gitrospection",
 	"description": "Get some basic insight into your git repository info",
 	"version": "0.0.1",
-	"private": false,
+	"private": true,
 	"author": "Aerathis <jdp@cultik.com>",
 	"repository": {
 		"type": "git",
@@ -15,10 +15,12 @@
 		"coverage": "nyc report --reporter=text-lcov | coveralls"
 	},
 	"dependencies": {
-		"nodegit": "latest"
+		"nodegit": "0.18.0"
 	},
 	"devDependencies": {
 		"mocha": "latest",
-		"coveralls": "latest"		
+		"coveralls": "latest",
+		"jshint": "latest",
+		"jsonlint": "latest"	
 	}
 }

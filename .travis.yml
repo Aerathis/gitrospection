@@ -5,4 +5,13 @@ node_js:
 env:
   - NODE_ENV=development
 
+before_install: 
+  - npm install -g jshint
+  - npm install -g jsonlint
+
+script:  
+  - for i in $(find . | grep .js$);do jshint "$i"; done
+  - for i in $(find . | grep .json$); do jsonlint "$i"; done
+  - nyc mocha --timeout=3000
+
 after_success: npm run coverage
