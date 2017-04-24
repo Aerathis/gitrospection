@@ -9,6 +9,6 @@ describe('lib/repo', function() {
 		it('should return a function', function() {
 			let res = mcc('', '');
 			assert.equal(typeof(res), 'function');
-		})
-	})
-})
+		});
+	});
+});
