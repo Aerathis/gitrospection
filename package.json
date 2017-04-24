@@ -11,16 +11,17 @@
 	"license": "MIT",
 	"scripts": {
 		"run": "node lib/lib.js",
-		"test": "nyc mocha --timeout=3000",
+		"test": "nyc --reporter=html --reporter=text mocha --timeout=3000",
 		"coverage": "nyc report --reporter=text-lcov | coveralls"
 	},
 	"dependencies": {
 		"nodegit": "0.18.0"
 	},
 	"devDependencies": {
-		"mocha": "latest",
-		"coveralls": "latest",
-		"jshint": "latest",
-		"jsonlint": "latest"	
+		"mocha": "3.3.0",
+		"coveralls": "2.13.0",
+		"jshint": "2.9.4",
+		"jsonlint": "1.6.2",
+		"rewire": "2.5.2"
 	}
 }

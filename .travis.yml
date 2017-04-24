@@ -13,6 +13,6 @@ script:
   - for i in $(find . | grep .js$ | grep -v node_modules);do jshint "$i"; done
   - for i in $(find . | grep .json$ | grep -v node_modules); do jsonlint "$i"; done
   - npm install
-  - nyc mocha --timeout=3000
+  - npm run test
 
 after_success: npm run coverage
